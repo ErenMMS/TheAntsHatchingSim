@@ -2,7 +2,7 @@
 
 Mini hatching simulation about "The Ants: Underground Kingdom" mobile game
 
-####Click Hash Button
+##### Click to Hash Button
 
 ![image](https://user-images.githubusercontent.com/61689837/235301523-6a3f8c99-9fcc-4290-bc68-5bb66f30ec6f.png)
 
