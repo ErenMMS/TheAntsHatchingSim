@@ -33,16 +33,17 @@
             label1 = new Label();
             AntName = new Label();
             CounterLbl = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // HatchButton
             // 
-            HatchButton.BackColor = SystemColors.ActiveCaptionText;
-            HatchButton.BackgroundImage = Properties.Resources.png_transparent_button_gold_buttons_miscellaneous_rectangle_gold1;
+            HatchButton.BackColor = Color.DarkOrange;
             HatchButton.BackgroundImageLayout = ImageLayout.Stretch;
             HatchButton.FlatStyle = FlatStyle.Flat;
-            HatchButton.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            HatchButton.Location = new Point(293, 270);
+            HatchButton.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            HatchButton.Location = new Point(324, 310);
             HatchButton.Name = "HatchButton";
             HatchButton.Size = new Size(115, 47);
             HatchButton.TabIndex = 0;
@@ -78,7 +79,7 @@
             AntName.AutoSize = true;
             AntName.BackColor = Color.Transparent;
             AntName.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            AntName.Location = new Point(293, 134);
+            AntName.Location = new Point(500, 68);
             AntName.Name = "AntName";
             AntName.Size = new Size(148, 40);
             AntName.TabIndex = 4;
@@ -96,12 +97,21 @@
             CounterLbl.TabIndex = 5;
             CounterLbl.Text = "0";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(288, 25);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(180, 279);
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.thea;
             ClientSize = new Size(680, 381);
+            Controls.Add(pictureBox1);
             Controls.Add(CounterLbl);
             Controls.Add(AntName);
             Controls.Add(label1);
@@ -110,6 +120,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -121,5 +132,6 @@
         private Label label1;
         private Label AntName;
         private Label CounterLbl;
+        private PictureBox pictureBox1;
     }
 }

@@ -63,26 +63,6 @@ namespace TheAntsHatchingSim.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap png_transparent_button_gold_buttons_miscellaneous_rectangle_gold {
-            get {
-                object obj = ResourceManager.GetObject("png-transparent-button-gold-buttons-miscellaneous-rectangle-gold", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap png_transparent_button_gold_buttons_miscellaneous_rectangle_gold1 {
-            get {
-                object obj = ResourceManager.GetObject("png-transparent-button-gold-buttons-miscellaneous-rectangle-gold1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap thea {
             get {
                 object obj = ResourceManager.GetObject("thea", resourceCulture);
