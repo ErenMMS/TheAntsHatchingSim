@@ -1,5 +1,6 @@
 using System;
 using System.Drawing.Drawing2D;
+using System.Linq.Expressions;
 using System.Windows.Forms;
 
 namespace TheAntsHatchingSim
@@ -9,7 +10,6 @@ namespace TheAntsHatchingSim
         public Form1()
         {
             InitializeComponent();
-
         }
 
         int counter = 0;
@@ -17,7 +17,8 @@ namespace TheAntsHatchingSim
         {
             counter++;
             CounterLbl.Text = counter.ToString();
-            AntName.BackColor = Color.Transparent;
+            AntPictureBox.Visible = false;
+            AntName.BackColor = Color.BlanchedAlmond;
             string[] antNames = new string[]
             {
                 "Wise Berserker",
@@ -84,21 +85,80 @@ namespace TheAntsHatchingSim
                     string textToFind = AntName.Text;
                     int index = listBox1.FindString(textToFind);
                     listBox1.SetSelected(index, true);
-                    if (AntName.Text == "Wise Berserker" ||
-                        AntName.Text == "Nimble Tree Ant" ||
-                        AntName.Text == "Predator" ||
-                        AntName.Text == "Jet Black" ||
-                        AntName.Text == "Shield Warden" ||
-                        AntName.Text == "Leaf Devourer" ||
-                        AntName.Text == "Blood Giant" ||
-                        AntName.Text == "Grave Digger" ||
-                        AntName.Text == "Golden Crystal" ||
-                        AntName.Text == "Crimson Fragger" ||
-                        AntName.Text == "Ruby Slender" ||
-                        AntName.Text == "Dusky Lurker")
+                    switch (AntName.Text)
                     {
-                        AntName.BackColor = ColorTranslator.FromHtml("#fc8c21");
-                        MessageBox.Show(AntName.Text);
+                        case "Wise Berserker":
+                            AntPictureBox.Visible = true;
+                            AntPictureBox.Image = Properties.Resources.WB;
+                            AntName.BackColor = ColorTranslator.FromHtml("#fc8c21");
+                            MessageBox.Show(AntName.Text);
+                            break;
+                        case "Nimble Tree Ant":
+                            AntPictureBox.Visible = true;
+                            AntPictureBox.Image = Properties.Resources.NTA;
+                            AntName.BackColor = ColorTranslator.FromHtml("#fc8c21");
+                            MessageBox.Show(AntName.Text);
+                            break;
+                        case "Predator":
+                            AntPictureBox.Visible = true;
+                            AntPictureBox.Image = Properties.Resources.P;
+                            AntName.BackColor = ColorTranslator.FromHtml("#fc8c21");
+                            MessageBox.Show(AntName.Text);
+                            break;
+                        case "Jet Black":
+                            AntPictureBox.Visible = true;
+                            AntPictureBox.Image = Properties.Resources.JB;
+                            AntName.BackColor = ColorTranslator.FromHtml("#fc8c21");
+                            MessageBox.Show(AntName.Text);
+                            break;
+                        case "Shield Warden":
+                            AntPictureBox.Visible = true;
+                            AntPictureBox.Image = Properties.Resources.SW;
+                            AntName.BackColor = ColorTranslator.FromHtml("#fc8c21");
+                            MessageBox.Show(AntName.Text);
+                            break;
+                        case "Leaf Devourer":
+                            AntPictureBox.Visible = true;
+                            AntPictureBox.Image = Properties.Resources.LD;
+                            AntName.BackColor = ColorTranslator.FromHtml("#fc8c21");
+                            MessageBox.Show(AntName.Text);
+                            break;
+                        case "Blood Giant":
+                            AntPictureBox.Visible = true;
+                            AntPictureBox.Image = Properties.Resources.BG;
+                            AntName.BackColor = ColorTranslator.FromHtml("#fc8c21");
+                            MessageBox.Show(AntName.Text);
+                            break;
+                        case "Grave Digger":
+                            AntPictureBox.Visible = true;
+                            AntPictureBox.Image = Properties.Resources.GD;
+                            AntName.BackColor = ColorTranslator.FromHtml("#fc8c21");
+                            MessageBox.Show(AntName.Text);
+                            break;
+                        case "Golden Crystal":
+                            AntPictureBox.Visible = true;
+                            AntPictureBox.Image = Properties.Resources.GC;
+                            AntName.BackColor = ColorTranslator.FromHtml("#fc8c21");
+                            MessageBox.Show(AntName.Text);
+                            break;
+                        case "Crimson Fragger":
+                            AntPictureBox.Visible = true;
+                            AntPictureBox.Image = Properties.Resources.CF;
+                            AntName.BackColor = ColorTranslator.FromHtml("#fc8c21");
+                            MessageBox.Show(AntName.Text);
+                            break;
+                        case "Ruby Slender":
+                            AntPictureBox.Visible = true;
+                            AntPictureBox.Image = Properties.Resources.RS;
+                            AntName.BackColor = ColorTranslator.FromHtml("#fc8c21");
+                            MessageBox.Show(AntName.Text);
+                            break;
+                        case "Dusky Lurker":
+                            AntPictureBox.Visible = true;
+                            AntPictureBox.Image = Properties.Resources.DL;
+                            AntName.BackColor = ColorTranslator.FromHtml("#fc8c21");
+                            MessageBox.Show(AntName.Text);
+                            break;
                     }
                     break;
                 }
