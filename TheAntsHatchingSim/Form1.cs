@@ -11,6 +11,7 @@ namespace TheAntsHatchingSim
             InitializeComponent();
 
         }
+
         int counter = 0;
         private void HatchButton_Click(object sender, EventArgs e)
         {
@@ -56,7 +57,7 @@ namespace TheAntsHatchingSim
                 "Other Purple Special Ants",
                 "Other Blue Special Ants"
             };
-            double[] numbers = new double[]
+            double[] probabilities = new double[]
             {
                 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10,
                 0.12, 0.12, 0.12,
@@ -67,14 +68,15 @@ namespace TheAntsHatchingSim
                 9.30, 10.02,
                 66.96
             };
-            double totalProbability = numbers.Sum();
+
+            double totalProbability = probabilities.Sum();
             Random random = new Random();
             double randomNum = random.NextDouble() * totalProbability;
 
             double cumulativeProbability = 0.0;
-            for (int i = 0; i < numbers.Length; i++)
+            for (int i = 0; i < probabilities.Length; i++)
             {
-                cumulativeProbability += numbers[i];
+                cumulativeProbability += probabilities[i];
                 if (randomNum <= cumulativeProbability)
                 {
                     AntName.Visible = true;
