@@ -1,3 +1,3 @@
 # TheAntsHatchingSim
 
-Mini hatching simulation about The Ants Underground Kingdom mobile game
+Mini hatching simulation about "The Ants: Underground Kingdom" mobile game
